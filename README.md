@@ -1,6 +1,6 @@
 # SystemLibCourse
 For use in my system's librarian course.
-## Some systems we are using so far
+## Some systems we are using 
 
   * VMs
   * Bash
