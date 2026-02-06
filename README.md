@@ -9,3 +9,6 @@ For use in my system's librarian course.
   * Markup Language
 
 There will be more in future weeks.
+
+I added this line in VM on Feb. 5th, 2026
+
