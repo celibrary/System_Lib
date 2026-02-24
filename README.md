@@ -1,7 +1,9 @@
 
 # SystemLibCourse
 For use in my system's librarian course.
-## Some systems we are using 
+## Some systems we are using
+
+
 
   * VMs
   * Bash
@@ -35,3 +37,27 @@ I someone created 2 README.md files.  I deleted one using the command rm
 >> [Textbook](https://cseanburns.github.io/systems-librarianship/3a-searching-with-grep.html)
 
 
+## grep
+-case senstitive
+-fast, precise searching of a file.
+--i ignores case
+-v search lines that do not match
+-c count
+
+grep -oi "search term" file name
+
+## apt and sudo
+Apt installs a program and updates
+sudo allows you to give commands as an administrator
+sudo apt yaz
+
+## yaz
+allows searches of another system like a library catalog.
+search by marc terms
+-yaz-client
+Z> Open
+bib1-attr documentation
+f = find
+infor retrieval using z39.50 protocols
+PQF-prefix query format
+-f @and @attr 1= "term"
