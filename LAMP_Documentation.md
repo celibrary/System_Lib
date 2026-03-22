@@ -8,6 +8,12 @@ relational database system, and PHP is the programming language that works with 
 
 The LAMP stack is commonly used because it is open source, well tested, and reliable.
 
+## Always Start
+
+`sudo apt update`
+`sudo apt upgrade`
+
+
 ## Install Steps for Apache
 
 `install apache2`
@@ -21,6 +27,11 @@ note: allow http
 `sudo apt install php libapache2-mod-php`
 `sudo systemctl restart apache2`
 
+Realized need to run entire command at the same time:
+
+`sudo apt install php libapache2-mod-php sudo sysemctl restart apache2'
+
+
 Confirm version with
 
 'php -v'
@@ -31,12 +42,14 @@ Verify Apache running OK
 
 `cd /var/www/html/`
 change to web document root
-'sudo nano info.php'
+`sudo nano info.php`
 
 In that nano file add:
+
 `<?php
 phpinfo();
-?>
+?>`
+
 
 Save and close
 Visit webpage, should see PHP = install OK.
@@ -149,21 +162,19 @@ source file
         author varchar(150) not null,
         title varchar(150) not null,
         copyright year not null,
-        primary key (id)
-);`
+        primary key (id));`
 
 ### Add data to table
         `insert into books (author, title, copyright) values
         ('Jennifer Egan', 'The Candy House', '2022');`
 
-Each row/r4ecord in parenthesis, separated by comma
+Each row/record in parenthesis, separated by comma
 
 ### View table
         `select * from books;`
 
 Everything is working well to this point.
 
-### SQL commands
 ### SQL commands
         -alter
         -describe
@@ -211,16 +222,22 @@ Change line so it reads:
 "DirectoryIndex index.php index.html index.cgi index.pl index.xhtml...."
 This will cause PHP file to show first instead of html
 
-CHeck with 
-'apachectl configtest`
+Check with
+ 
+`apachectl configtest`
 if OK, then
+
 `sudo systemctl reload apache2`
-`systemctl status apache2
+`systemctl status apache2`
 
 ## Problems
 
-Webpage not working.  Something went wrong between adding credentials and adding the php file.   Very frustrati>
-POsted in class questions.
+1) Tried /var/www/html/$ Did not work Backed up and repeated steps to make sure Apache running. It is. I don't need $
+
+2) Did something wrong when creating PHP file. Repeated instructions and now I see the correct webpage information.
+
+Webpage not working.  Something went wrong between adding credentials and adding the php file.   Very frustrating.
+Posted in class questions.
 
 "PHP Warning:  Undefined variable $db_username in /var/www/html/opac.php on line 21
 PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: YES) in>
