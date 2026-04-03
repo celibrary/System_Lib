@@ -7,7 +7,7 @@
 `sudo apt upgrade`
 `sudo apt clean`
 
-All ran successfully.  Not return for "clean" command, so not sure if that did anything.
+All ran successfully.  No return for "clean" command, so not sure if that did anything.
 
 ## Create New Database
  
