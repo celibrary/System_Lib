@@ -84,8 +84,7 @@ Returns are good, Quit -
 
 Go to wordpress directory - /var/www/html/wordpress
 `ls`
-will see a configure file - wp-config-sample-php
-we need to copy this file and alter it.
+will see a configure file - wp-config-sample-phpwe need to copy this file and alter it.
 `sudo cp wp-config-sample.php wp-config.php`
 
 Check that our copy is there using `ls`
@@ -103,7 +102,7 @@ At the end we entered command in case permissions were not working in lab enviro
 `define('FS_METHOD','direct');`
 
 Good to change defaults to add barrier to hacking.  They will assume defaults.
-`:wq` not sure what this does?  will have to investigate.
+
 Save and close Nano file.
 
 ## Finish
