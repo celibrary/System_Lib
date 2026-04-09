@@ -109,8 +109,7 @@ Save and close Nano file.
 
 Go to my URL.  Change the directory to wordpress.  Will get sign-on page. Completed with the following -
 
-Username: CaraE
-Pass: t0Lbu9V3N&nA!9e^E^
+
 
 Email: cel@uky.edu
 
