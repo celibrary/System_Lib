@@ -62,7 +62,7 @@ Create a new user for WordPress DB, User: wordpress-
 
 `create user 'wordpress'@'localhost' identified by 'password;`
 
-My password is Word5!moon
+My password is
 
 Create a new DB 
 
