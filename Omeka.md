@@ -50,3 +50,5 @@ Removed #  before  "SetEnv"
 
 This time it worked.
  
+## Other Problems
+Git Hub divergent.  Looked at several articles and Help pages.  Reading returns helpful.  Finally resolved after multiple attempts.
